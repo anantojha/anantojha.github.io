@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 const AboutMe: React.FC = () => {
     return <section className='flex flex-col bg-white py-20 text-3xl md:text-4xl'>
@@ -18,7 +17,7 @@ const AboutMe: React.FC = () => {
                     <div className="row leadind-tight max-w-5xl mx-auto tracking-tight">
 
                         <div>
-                            <Image src="/assets/carleton_logo.png" width={375} height={175} />
+                            <img src="/assets/carleton_logo.png" width={375} height={175} />
                             <p className="px-12">Bachelor of Computer Science Honours</p>
                             <p className="mt-2 text-2xl">Class of 2022</p>
                         </div>
