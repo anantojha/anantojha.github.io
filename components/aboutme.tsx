@@ -7,23 +7,18 @@ const AboutMe: React.FC = () => {
                         <strong>
                             I am a self-driven and motivated Computer Science undergraduate. With demonstrated ability in developing and testing software applications.
                         </strong>
-                        Strong programming, debugging and technical documentation skills.
+                        &nbsp;Strong programming, debugging and technical documentation skills.
                     </p>
-
                 </div>
                 <div className="container x-auto px-11 text-center mt-32">
-                
                     <div className="flex flex-col bg-white text-3xl md:text-3xl" > 
-                    <div className="row leadind-tight max-w-5xl mx-auto tracking-tight">
-
-                        <div>
-                            <img src="/assets/carleton_logo.png" width={375} height={175} />
+                        <div className="leadind-tight max-w-5xl mx-auto tracking-tight">
+                            <div className="flex items-center justify-center">
+                                <img src="/assets/carleton_logo.png" width={375} height={175} />
+                            </div>
                             <p className="px-12">Bachelor of Computer Science Honours</p>
                             <p className="mt-2 text-2xl">Class of 2022</p>
                         </div>
-                    
-                    </div>
-                     
                     </div>
                 </div>
             </section>
