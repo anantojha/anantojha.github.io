@@ -6,28 +6,28 @@
 #     branches:
 #       - main
 
-jobs:
-  build-project:
-    name: build Next.js application
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Install NPM dependencies
-        run: npm install
-      - name: Build static website
-        run: npm run build
-      - name: Upload static website
-        uses: actions/upload-artifact@v2
-        with: 
-          name: static-site
-          path: out/
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: deploy-branch
-          publish_dir: ./out
+# jobs:
+#   build-project:
+#     name: build Next.js application
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v2
+#       - name: Install NPM dependencies
+#         run: npm install
+#       - name: Build static website
+#         run: npm run build
+#       - name: Upload static website
+#         uses: actions/upload-artifact@v2
+#         with: 
+#           name: static-site
+#           path: out/
+#       - name: Deploy
+#         uses: peaceiris/actions-gh-pages@v3
+#         with:
+#           github_token: ${{ secrets.GITHUB_TOKEN }}
+#           publish_branch: deploy-branch
+#           publish_dir: ./out
       
 name: Build and Deploy
 on: [push]
@@ -53,7 +53,7 @@ jobs:
         with: 
           name: static-site
           path: out/
-          
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
