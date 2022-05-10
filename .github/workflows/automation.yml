@@ -1,5 +1,11 @@
 name: Build and reelease Next.js web application
-on: push
+
+on:
+  repository_dispatch:
+  push:
+    branches:
+      - main
+
 jobs:
   build-project:
     name: build Next.js application
@@ -16,4 +22,9 @@ jobs:
         with: 
           name: static-site
           path: out/
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ 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 }}
+          publish_dir: ./out
       

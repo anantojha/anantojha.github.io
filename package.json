@@ -5,13 +5,14 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
-    "start": "next start --port 80"  
+    "start": "next start --port 80"
   },
   "dependencies": {
     "axios": "^0.27.2",
     "embla-carousel-autoplay": "^6.2.0",
     "embla-carousel-class-names": "^6.2.0",
     "embla-carousel-react": "^6.2.0",
+    "gh-pages": "^4.0.0",
     "next": "12.1.6",
     "next-optimized-images": "^2.6.2",
     "react": "18.1.0",
