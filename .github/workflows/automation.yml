@@ -30,13 +30,10 @@
 #           publish_dir: ./out
       
 name: Build and Deploy
-on: [push]
+on: [push] 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: 
 
     steps:
       - name: Checkout code
