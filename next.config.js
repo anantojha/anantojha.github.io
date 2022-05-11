@@ -1,5 +1,8 @@
 module.exports = {
   reactStrictMode: true,
-  basePath: '/',
-  assetPrefix: '/'
+  exportPathMap: function () {
+      return {
+          '/': { page: '/' }
+      };
+  }
 };
