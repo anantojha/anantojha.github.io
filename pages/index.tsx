@@ -17,7 +17,6 @@ const Home: NextPage = () => {
 
       <Masthead />
       <AboutMe />
-      <Contact />
       
     </div>
   )
