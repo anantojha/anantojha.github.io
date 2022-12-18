@@ -36,15 +36,41 @@
     padding-bottom: 2%;
 }
 
-.projectname {
+.projectJobArc {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-top: 2%;
-    color: rgb(158, 111, 201);
+    padding: 5%;
+    color: rgb(156, 93, 214);
     text-shadow: 2px;
 }
 
+.projectYTPlayer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5%;
+    color: rgb(220, 40, 40);
+    text-shadow: 2px;
+}
+
+.projectElevator {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5%;
+    color: rgba(74, 74, 74, 0.772);
+    text-shadow: 2px;
+}
+
+.projectSmileDetector {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5%;
+    color: rgb(60, 137, 210);
+    text-shadow: 2px;
+}
+
+.projectbox {
+    border-radius: 20px;
+    background-color: rgba(227, 227, 227, 0.902);
+    padding: 3%;
+}
 .projectpic {
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 
