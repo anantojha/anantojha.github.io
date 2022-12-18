@@ -114,3 +114,12 @@
     flex-direction: column;
   }
 }
+
+.borderlight {
+  border: 2px solid rgb(41, 39, 39);
+}
+
+.profile {
+  padding: 0 2rem;
+  border: 2px solid rgb(41, 39, 39);
+}

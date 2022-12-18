@@ -1,0 +1,42 @@
+.gridrow{
+    border: 2px;
+    border-color: black;
+    height: 300px;
+    padding: 2%;
+    flex-direction: row;
+}
+
+.gridcard {
+    padding: 2%;
+    border: 2px;
+    border-color: black;
+    flex-direction: row;
+    flex: content;
+    flex: auto;
+    color: black;
+    font-size: x-large;
+    font: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.cardcontent{
+    padding: 2%;
+    border: 2px;
+    border-color: black;
+    flex-direction: row;
+    flex: content;
+}
+
+.projecttitle {
+    color: black;
+    font-size: xx-large;
+    font: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+

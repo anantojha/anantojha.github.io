@@ -5,8 +5,13 @@ import styles from '../styles/Home.module.css'
 import Masthead from '../components/masthead'
 import AboutMe from '../components/aboutme'
 import Contact from '../components/contact'
+import Timeline from '../components/timeline'
+import Project from '../components/projects'
+import { ApolloClient, InMemoryCache, createHttpLink, gql } from '@apollo/client';
+import { setContext } from '@apollo/client/link/context';
 
-const Home: NextPage = () => {
+const Home: NextPage = (pinnedItems) => {
+  console.log(pinnedItems)
   return (
     <div className={styles.container}>
       <Head>
@@ -17,9 +22,69 @@ const Home: NextPage = () => {
 
       <Masthead />
       <AboutMe />
+      <Timeline />
+      <Project />
+      <Contact />
       
     </div>
   )
 }
+
+// export async function getStaticProps() {
+//   const httpLink = createHttpLink({
+//     uri: 'https://api.github.com/graphql',
+//   });
+
+//   const authLink = setContext((_, { headers }) => {
+//     return {
+//       headers: {
+//         ...headers,
+//         authorization: `Bearer ${process.env.GITHUB_ACCESS_TOKEN}`,
+//       }
+//     }
+//   });
+
+//   const client = new ApolloClient({
+//     link: authLink.concat(httpLink),
+//     cache: new InMemoryCache()
+//   });
+
+//   const { data } = await client.query({
+//     query: gql`
+//     {
+//       user(login: "anantojha") {
+//         pinnedItems(first: 6) {
+//           totalCount
+//           edges {
+//             node {
+//               ... on Repository {
+//                 id
+//                 name
+//                 url
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//     `
+//   })
+
+//   const { user } = data;
+
+//   const pinnedItems = user.pinnedItems.edges.map(({ node }) => node)
+
+
+
+//   console.log(pinnedItems)
+
+
+
+//   return {
+//     props: {
+
+//     }
+//   }
+// }
 
 export default Home

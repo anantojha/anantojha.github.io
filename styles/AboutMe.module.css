@@ -1,0 +1,11 @@
+.profilebanner{
+    background-color: rgba(239, 239, 239, 0.681);
+    padding: 2%;
+}
+
+.intoparagraph {
+    padding: 2%;
+    color: rgba(98, 98, 98, 0.835);
+    font-size: x-large;
+    text-align: center;
+}

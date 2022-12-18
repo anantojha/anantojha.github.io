@@ -1,27 +1,20 @@
 import React from "react";
+import styles from '../styles/AboutMe.module.css'
+
 
 const AboutMe: React.FC = () => {
-    return <section className='flex flex-col bg-white py-20 text-3xl mb-12 md:text-4xl'>
-                <div className="container mx-auto px-11">
-                    <p className="leadind-tight max-w-5xl mx-auto text-4xl tracking-tight">
-                        <strong>
-                            I am a self-driven and motivated Computer Science undergraduate. With demonstrated ability in developing and testing software applications.
-                        </strong>
-                        &nbsp;Strong programming, debugging and technical documentation skills.
-                    </p>
-                </div>
-                <div className="container x-auto px-11 text-center mt-32">
-                    <div className="flex flex-col bg-white text-3xl md:text-3xl" > 
-                        <div className="leadind-tight max-w-5xl mx-auto tracking-tight">
-                            <div className="flex items-center justify-center">
-                                <img src="/assets/carleton_logo.png" width={375} height={175} />
-                            </div>
-                            <p className="px-12">Bachelor of Computer Science Honours</p>
-                            <p className="mt-2 text-2xl">Class of 2022</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+    return <section className='flex flex-col bg-white py-20'>
+        <div className={styles.profilebanner}>
+            <div className='flex flex-row'>
+                <img src="/assets/Profile2.png" width={300} height={300} />
+                <p className='leadind-tight max-w-5xl mx-auto tracking-tight'></p>
+                <strong className={styles.profilebanner}>
+                    <p className={styles.intoparagraph}>Hi I&apos;m Anant! Welcome to my corner of the world-wide-web. Here you&apos;ll find my personal projects, background experience and contact information. Feel free to shoot me a message if you&apos;d like to connect!</p>
+                    </strong>
+                <p/>
+            </div>
+        </div>
+    </section>
 }
 
 export default AboutMe

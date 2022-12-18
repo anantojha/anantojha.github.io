@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import styles from "../styles/Contact.module.css"
 
 const Contact: React.FC = () => {
 
@@ -34,7 +35,7 @@ const Contact: React.FC = () => {
       }
 
     return <div className='bg-white text-black flex flex-col justify-center items-center '>
-        <p className="font-bold mt-20">contact by email</p>
+        <p className={styles.contacttitle }>Get In Touch</p>
             <form className="flex flex-col" onSubmit={SendMail}>
                 <input 
                     id="Name" 

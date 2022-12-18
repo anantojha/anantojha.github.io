@@ -7,7 +7,6 @@ const Masthead: React.FC = () => {
         window.open("/resume.pdf");
     }
 
-
     return <div className="min-h-screen flex flex-col items-center justify-center">
                 <video autoPlay loop muted playsInline className="absolute w-full h-full object-cover">
                     <source src="/assets/masthead-bg.m4v" type="video/mp4; codecs=hvc1" />
