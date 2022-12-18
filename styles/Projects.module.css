@@ -17,8 +17,7 @@
     text-align: center;
 }
 
-.cardcontent{
-    padding: 2%;
+.cardcontent {
     border: 2px;
     border-color: black;
     flex-direction: row;
@@ -36,4 +35,17 @@
     padding-top: 2%;
     padding-bottom: 2%;
 }
+
+.projectname {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 2%;
+    color: rgb(158, 111, 201);
+    text-shadow: 2px;
+}
+
+.projectpic {
+    border-radius: 10px;
+}
+
+
 

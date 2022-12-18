@@ -10,10 +10,10 @@ const Timeline: React.FC = () => {
         <div className={styles.projecttitle}><h1>Projects</h1></div>
         <div className="flex flex-row items-center justify-center">
             <div className={styles.gridcard}>
-                <div onClick={() => window.open("https://github.com/anantojha/JobArc", "_blank")} className="border rounded-2xl">
+                <div onClick={() => window.open("https://github.com/anantojha/JobArc", "_blank")} className="border rounded-2xl py-5 font-bold bg-black">
                     <a className={styles.projectname} href="https://github.com/anantojha/JobArc" target="_blank">JobArc Android</a>
-                    <div className="items-center justify-center">
-                        <img className="items-center justify-center" src="/assets/Jobarc.png" width={500} height={500} />
+                    <div className="flex flex-col items-center justify-center py-5">
+                        <img className={ styles.projectpic} src="/assets/Jobarc.png" width={500} height={500} />
                     </div>
                 </div>
             
