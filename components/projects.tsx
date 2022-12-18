@@ -8,31 +8,35 @@ const Timeline: React.FC = () => {
     return <section className='flex flex-col bg-white p-20'>
         
         <div className={styles.projecttitle}><h1>Projects</h1></div>
-        <div className="flex flex-row">
+        <div className="flex flex-row items-center justify-center">
             <div className={styles.gridcard}>
-                <div onClick={openRepo} className="border"><a className={styles.projectname} href="https://github.com/anantojha/JobArc">JobArc Android</a></div>
-                <div ></div>
+                <div onClick={() => window.open("https://github.com/anantojha/JobArc", "_blank")} className="border rounded-2xl">
+                    <a className={styles.projectname} href="https://github.com/anantojha/JobArc" target="_blank">JobArc Android</a>
+                    <div className="items-center justify-center">
+                        <img className="items-center justify-center" src="/assets/Jobarc.png" width={500} height={500} />
+                    </div>
+                </div>
+            
             </div>
-            <div className={ styles.gridcard}>
-                <div className="border"><a href="">Tile-Rummy</a></div>
+            <div className={styles.gridcard}>
+                <div onClick={() => window.open("https://github.com/anantojha/Android-Youtube-Player", "_blank")} className="border rounded-2xl">
+                    <a className={styles.projectname} href="https://github.com/anantojha/Android-Youtube-Player" target="_blank">Android Youtube Player</a>
+                </div>
+                <div ></div>
             </div>
         </div>
         <div className="flex flex-row">
             <div className={styles.gridcard}>
-                <div className="border"><a href=""> Multithreaded-Elevator-System</a></div>
+                <div onClick={() => window.open("https://github.com/anantojha/Tile-Rummy", "_blank")} className="border rounded-2xl">
+                    <a className={styles.projectname} href="https://github.com/anantojha/Tile-Rummy" target="_blank">Tile Rummy Board Game</a>
+                </div>
                 <div ></div>
             </div>
-            <div className={ styles.gridcard}>
-                <div className="border"><a href=""> Android-Youtube-Player</a></div>
-            </div>
-        </div>
-        <div className="flex flex-row">
             <div className={styles.gridcard}>
-                <div className="border"><a href=""> CNN-Smile-Detector</a></div>
+                <div onClick={() => window.open("https://github.com/anantojha/CNN-Smile-Detector", "_blank")} className="border rounded-2xl">
+                    <a className={styles.projectname} href="https://github.com/anantojha/CNN-Smile-Detector" target="_blank">Real-Time Smile Detector</a>
+                </div>
                 <div ></div>
-            </div>
-            <div className={ styles.gridcard}>
-                <div className="border"><a href="">SCAPES Complier</a></div>
             </div>
         </div>
         </section>

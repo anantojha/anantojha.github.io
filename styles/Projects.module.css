@@ -8,11 +8,8 @@
 
 .gridcard {
     padding: 2%;
-    border: 2px;
+    width: 50%;
     border-color: black;
-    flex-direction: row;
-    flex: content;
-    flex: auto;
     color: black;
     font-size: x-large;
     font: bold;
