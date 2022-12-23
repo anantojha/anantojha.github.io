@@ -15,6 +15,8 @@
     font: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
+    align-items: center;
+    justify-items: center;
 }
 
 .cardcontent {
@@ -39,36 +41,91 @@
 .projectJobArc {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 5%;
-    color: rgb(156, 93, 214);
+    color: rgb(128, 21, 229);
     text-shadow: 2px;
 }
 
 .projectYTPlayer {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 5%;
-    color: rgb(220, 40, 40);
+    color: rgb(255, 0, 0);
     text-shadow: 2px;
 }
 
 .projectElevator {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 5%;
-    color: rgba(74, 74, 74, 0.772);
+    color: rgba(41, 41, 41, 0.772);
     text-shadow: 2px;
 }
 
 .projectSmileDetector {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 5%;
-    color: rgb(60, 137, 210);
+    color: rgb(11, 58, 245);
     text-shadow: 2px;
 }
 
-.projectbox {
+.projectboxJobArc {
     border-radius: 20px;
-    background-color: rgba(227, 227, 227, 0.902);
+    background-color: rgba(144, 85, 227, 0.428);
     padding: 3%;
+    height: 430px;
 }
+
+.projectboxJobArcHover {
+    border-radius: 20px;
+    background-color: rgba(179, 134, 241, 0.794);
+    padding: 3%;
+    cursor: pointer;
+    height: 430px;
+}
+
+.projectboxYTPlayer {
+    border-radius: 20px;
+    background-color: rgba(244, 44, 44, 0.428);
+    padding: 3%;
+    height: 430px;
+}
+
+.projectboxYTPlayerHover {
+    border-radius: 20px;
+    background-color: rgba(236, 127, 127, 0.875);
+    padding: 3%;
+    cursor: pointer;
+    height: 430px;
+}
+
+.projectboxElevator {
+    border-radius: 20px;
+    background-color :rgba(227, 227, 227, 0.902);
+    padding: 3%;
+    height: 430px;
+}
+
+.projectboxElevatorHover {
+    border-radius: 20px;
+    background-color: rgba(208, 205, 205, 0.937);
+    padding: 3%;
+    cursor: pointer;
+    height: 430px;
+}
+
+.projectboxSmileDetector {
+    border-radius: 20px;
+    background-color :rgba(42, 106, 209, 0.564);
+    padding: 3%;
+    height: 430px;
+}
+
+.projectboxSmileDetectorHover {
+    border-radius: 20px;
+    background-color: rgba(86, 145, 241, 0.867);
+    padding: 3%;
+    cursor: pointer;
+    height: 430px;
+}
+
 .projectpic {
     border-radius: 15px;
 }

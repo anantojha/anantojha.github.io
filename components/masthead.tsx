@@ -4,7 +4,7 @@ const Masthead: React.FC = () => {
 
 
     function handleResumeDownload(){
-        window.open("/resume.pdf");
+        window.open("/anantojha.pdf");
     }
 
     return <div className="min-h-screen flex flex-col items-center justify-center">

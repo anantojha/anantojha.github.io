@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import styles from "../styles/Contact.module.css"
+import { Alert } from '@mui/material';
 
 const Contact: React.FC = () => {
+    const [isEmailSuccess, setEmailSuccess] = useState(false);
+    const [isEmailError, setEmailError] = useState(false);
+
 
     function handleEmailValidation(e: any) {
         if(!e.target[1].value.trim().includes('@')){
@@ -28,14 +32,25 @@ const Contact: React.FC = () => {
             e.target[0].value = ''
             e.target[1].value = ''
             e.target[2].value = ''
-            alert('Email Sent')
+            setEmailError(false);
+            setEmailSuccess(true);
+            
         } else {
-            alert('Email Not Sent')
+            setEmailSuccess(false);
+            setEmailError(true);
         }
       }
 
     return <div className='bg-white text-black flex flex-col justify-center items-center '>
-        <p className={styles.contacttitle }>Get In Touch</p>
+        <p className={styles.contacttitle}>Get In Touch</p>
+            {isEmailSuccess ? (
+            <div>
+                <Alert severity="success">Email Sent!</Alert></div>
+            ) : (<div></div>)}
+            {isEmailError ? (
+            <div>
+                <Alert severity="error" >Email Not Sent. Try Again!</Alert></div>
+            ): (<div></div>)}
             <form className="flex flex-col" onSubmit={SendMail}>
                 <input 
                     id="Name" 
