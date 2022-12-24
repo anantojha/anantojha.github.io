@@ -1,24 +1,42 @@
 .profilebanner{
-    background-color: rgba(239, 239, 239, 0.726);
-    padding: 2%;
-    border-radius: 20px;
+    background-color: rgb(238, 238, 238);
+    padding: 1%;
+    border-radius: 15px;
 }
 
 .intobanner {
-    padding: 5%;
     border-radius: 10px;
 }
 
 .intoparagraph {
-    padding: 4%;
+    padding-top: 5%;
     color: rgb(98, 98, 98);
     font-size: x-large;
     text-align: center;
-    border-radius: 10px;
 }
 
 .profilepic {
     align-items: center; 
     justify-content: center;
-    border-radius: 15%;
+    border-radius: 20px;
+    padding: 2%;
+}
+
+.iconpic {
+    align-items: center;
+    justify-content: center;
+    padding-inline-end: 35%;
+}
+
+.socialicons {
+    flex:auto;
+    flex-direction:row;
+    align-items: center;
+    justify-items: center;
+    border-radius: 20px;
+}
+
+.imagediv {
+    padding: 2%;
+    border-radius: 10px 10px 15px 15px;
 }

@@ -41,7 +41,7 @@ const Contact: React.FC = () => {
         }
       }
 
-    return <div className='bg-white text-black flex flex-col justify-center items-center '>
+    return <div className='text-black flex flex-col justify-center items-center '>
         <p className={styles.contacttitle}>Get In Touch</p>
             {isEmailSuccess ? (
             <div>
@@ -83,7 +83,7 @@ const Contact: React.FC = () => {
                     className="flex flex-col bg-white text-black text-left outline-none border-2 border-black rounded-3xl px-5 py-2"
                 />
                 <div className="text-center mt-10">
-                    <button type="submit" className="bg-black border-black hover:bg-opacity-50 active:bg-opacity-90 bg-opacity-10 text-black rounded-3xl border-2 px-16 py-2 mb-20">Send</button>
+                    <button type="submit" className="bg-white border-black hover:bg-opacity-75 active:bg-opacity-90 bg-opacity-10 text-black rounded-3xl border-2 px-16 py-2 mb-20">Send</button>
                 </div>
             </form>
         </div>

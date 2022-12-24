@@ -1,16 +1,18 @@
 .gridrow{
-    border: 2px;
-    border-color: black;
-    height: 300px;
-    padding: 2%;
     flex-direction: row;
 }
 
+.outergridcard {
+    font: bold;
+    background-color: black;
+    border: 5px;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+
 .gridcard {
-    padding: 2%;
-    width: 50%;
-    border-color: black;
-    color: black;
+    padding: 5px;
     font-size: x-large;
     font: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -20,22 +22,22 @@
 }
 
 .cardcontent {
-    border: 2px;
-    border-color: black;
     flex-direction: row;
     flex: content;
 }
 
 .projecttitle {
-    color: black;
-    font-size: xx-large;
-    font: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-decoration: underline;
+    color: rgb(52, 52, 52);
+    font-size: 2vw;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
     flex-direction: column;
     text-align: center;
-    padding-top: 2%;
+    line-height: 1;
+    padding-top: 10%;
     padding-bottom: 2%;
+    text-decoration: underline;
 }
 
 .projectJobArc {
@@ -68,66 +70,110 @@
 
 .projectboxJobArc {
     border-radius: 20px;
-    background-color: rgba(144, 85, 227, 0.428);
-    padding: 3%;
+    background-color: rgb(238, 238, 238);
     height: 430px;
+    width: 630px;
 }
 
 .projectboxJobArcHover {
     border-radius: 20px;
-    background-color: rgba(179, 134, 241, 0.794);
-    padding: 3%;
+    background-color: rgba(255, 255, 255, 1);
+    animation: wiggle 2s linear infinite;
     cursor: pointer;
     height: 430px;
+    width: 630px;
+}
+
+/* Keyframes */
+@keyframes wiggle {
+
+    0%,
+    7% {
+        transform: rotateZ(0);
+    }
+
+    15% {
+        transform: rotateZ(-5deg);
+    }
+
+    20% {
+        transform: rotateZ(3.5deg);
+    }
+
+    25% {
+        transform: rotateZ(-3.5deg);
+    }
+
+    30% {
+        transform: rotateZ(2deg);
+    }
+
+    35% {
+        transform: rotateZ(-1.3deg);
+    }
+
+    40%,
+    100% {
+        transform: rotateZ(0);
+    }
 }
 
 .projectboxYTPlayer {
     border-radius: 20px;
-    background-color: rgba(244, 44, 44, 0.428);
-    padding: 3%;
+    background-color: rgb(238, 238, 238);
     height: 430px;
+    width: 630px;
 }
 
 .projectboxYTPlayerHover {
     border-radius: 20px;
-    background-color: rgba(236, 127, 127, 0.875);
-    padding: 3%;
+    background-color: rgba(255, 255, 255, 1);
+    animation: wiggle 2s linear infinite;
     cursor: pointer;
     height: 430px;
+    width: 630px;
 }
 
 .projectboxElevator {
     border-radius: 20px;
-    background-color :rgba(227, 227, 227, 0.902);
-    padding: 3%;
+    background-color: rgb(238, 238, 238);
     height: 430px;
+    width: 630px;
 }
 
 .projectboxElevatorHover {
     border-radius: 20px;
-    background-color: rgba(208, 205, 205, 0.937);
-    padding: 3%;
+    background-color:rgba(255, 255, 255, 1);
+    animation: wiggle 2s linear infinite;
     cursor: pointer;
     height: 430px;
+    width: 630px;
 }
 
 .projectboxSmileDetector {
     border-radius: 20px;
-    background-color :rgba(42, 106, 209, 0.564);
-    padding: 3%;
+    background-color: rgb(238, 238, 238);
     height: 430px;
+    width: 630px;
 }
 
 .projectboxSmileDetectorHover {
     border-radius: 20px;
-    background-color: rgba(86, 145, 241, 0.867);
-    padding: 3%;
+    background-color: rgb(255, 255, 255);
+    animation: wiggle 2s linear infinite;
     cursor: pointer;
     height: 430px;
+    width: 630px;
 }
 
 .projectpic {
     border-radius: 15px;
+    padding-top: 4%;
+}
+
+.projectpicsmiledetector {
+    border-radius: 15px;
+    padding-top: 10%;
 }
 
 

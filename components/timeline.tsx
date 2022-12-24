@@ -6,8 +6,7 @@ import styles from '../styles/Timeline.module.css'
 
 
 const Timeline: React.FC = () => {
-    return <section className='flex flex-col bg-white py-20'>
-        
+    return <section className='flex flex-col'>
         <div className={styles.exptitle}>
             <h1>Professional Experience</h1>
         </div>
@@ -27,6 +26,7 @@ const Timeline: React.FC = () => {
             </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
+                dateClassName={styles.date}
                 date="2022 - 2022"
                 iconStyle={{ background: 'rgb(235, 63, 28)', color: '#ffa' }}
                 
@@ -39,6 +39,7 @@ const Timeline: React.FC = () => {
             </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
+                dateClassName="text-white font-bold"
                 date="2020 - 2021"
                 iconStyle={{ background: 'rgb(164, 39, 218)', color: '#ffa' }}
                 
@@ -49,6 +50,7 @@ const Timeline: React.FC = () => {
             </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
+                dateClassName={styles.date}
                 date="2020 - 2020"
                 iconStyle={{ background: 'rgb(35, 208, 35)', color: '#ffa' }}
                 
@@ -63,26 +65,25 @@ const Timeline: React.FC = () => {
         <div className={styles.edutitle}>
             <h1>Education</h1>
         </div>
-
-        <div className={styles.edudescription}>
-            <div className="flex flex-row align-center justify-center">
-                <div className={styles.padding}>
-                    <div className={styles.logo}>
-                        <img src="/assets/carleton_logo.png" width={275} height={100} />
+        <div className="py-10 px-20">
+            <div className={styles.edudescription}>
+                <div className="flex flex-row align-center justify-center">
+                    <div className={styles.padding}>
+                        <div className={styles.logo}>
+                            <img src="/assets/carleton_logo.png" width={275} height={100} />
+                        </div>
+                        <p className={styles.edutext}>Bachelor of Computer Science Honours.</p>
+                        <p className={styles.edutexttwo}>Graduated 2022.</p>
                     </div>
-                    <p className={styles.edutext}>Bachelor of Computer Science Honours.</p>
-                    <p className={styles.edutexttwo}>Graduated 2022.</p>
-                </div>
-                <div className={styles.awardslist}>
-                    <p className={styles.awardtextone}>Dean&apos;s Honor List Award</p>
-                    <p className={styles.awardtext}>President&apos;s Scholarship</p>
-                    <p className={styles.awardtext}>John M. Beck Scholarship</p>
-                    <p className={styles.awardtext}>Enterance Scholarship</p>                
+                    <div className={styles.awardslist}>
+                        <p className={styles.awardtext}>Undergraduate Teaching Assistant</p>  
+                        <p className={styles.awardtextone}>Dean&apos;s Honor List Award</p>
+                        <p className={styles.awardtext}>President&apos;s Scholarship</p>
+                        <p className={styles.awardtext}>John M. Beck Scholarship</p>              
+                    </div>
                 </div>
             </div>
-            
         </div>
-        
     </section>
 }
 

@@ -21,7 +21,7 @@ const Masthead: React.FC = () => {
                         <span>Software Engineer,<span>  </span>Designer</span>
                     </h2>
                     <div className="text-center mt-10">
-                        <button type="submit" onClick={handleResumeDownload} className="bg-white bg-opacity-20 text-white rounded-3xl border-2 px-8 py-2">Resume</button>
+                        <button type="submit" onClick={handleResumeDownload} className="bg-white bg-opacity-20 hover:bg-opacity-60 active:bg-opacity-80 text-white rounded-3xl border-2 px-8 py-2">Resume</button>
                     </div>
                 </div>
                 <div className="flex-grow-0 pb-20 md:pb-10 transition-all duration-1000 ">
