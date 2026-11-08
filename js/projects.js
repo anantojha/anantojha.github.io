@@ -5,8 +5,8 @@ const experience = [
   {
     org: "Bell",
     roles: [
-      { title: "Developer II", when: "2023 – Present" },
-      { title: "Developer I", when: "2022 – 2023" }
+      { title: "Developer II", when: "20XX – Present" }, // TODO: add dates
+      { title: "Developer I", when: "20XX – 20XX" }
     ],
     bullets: [
       "Built zero-touch provisioning for multi-vendor datacenter equipment, running 25,000+ changes a year at a 96% success rate.",
@@ -17,13 +17,20 @@ const experience = [
   {
     org: "Finastra",
     roles: [{ title: "Test Automation Engineer", when: "2020 – 2021" }],
-    bullets: ["Built automated test suites that caught regressions before release, replacing repeated manual test passes.",
-    "Ran the suites in the CI pipeline so every build was tested automatically."]
+    // DRAFT: written from the job title only. Verify each line, then add a real number.
+    bullets: [
+      "Built automated test suites that caught regressions before release, replacing repeated manual test passes.",
+      "Ran the suites in the CI pipeline so every build was tested automatically."
+    ]
   },
   {
     org: "Manulife",
-    roles: [{ title: "Cloud Developer Intern", when: "2020 – 2020" }],
-    bullets: ["Developed and deployed new features for internal cloud-based tooling as part of the team’s automation work."]
+    roles: [{ title: "Cloud Developer Intern", when: "2020" }],
+    // DRAFT: written from the job title only. Verify each line, then add a real number.
+    bullets: [
+      "Developed and deployed cloud-based tooling as part of the team’s automation work.",
+      "Worked in an agile team, shipping features through code review and CI/CD."
+    ]
   }
 ];
 
@@ -46,7 +53,7 @@ const projects = [
     title: "AI-assisted incident analysis",
     problem: "On-call engineers spent the first minutes of an incident gathering telemetry.",
     approach: "Gemini via Vertex AI behind a FastAPI wrapper, with MCP servers surfacing telemetry for NOC triage.",
-    result: "Faster first-pass triage for network operations.",
+    result: "Faster first-pass triage for network operations.", // TODO: add a measured result if you have one
     tags: ["Python", "FastAPI", "Vertex AI", "MCP"]
   }
 ];
