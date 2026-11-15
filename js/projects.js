@@ -5,8 +5,7 @@ const experience = [
   {
     org: "Bell Canada, Toronto",
     roles: [
-      { title: "Cloud Automation Software Developer II", when: "Dec 2023 – Present" },
-      { title: "Cloud Automation Software Developer I", when: "Jun 2022 – Dec 2023" }
+      { title: "Cloud Automation Software Developer II", when: "Jun 2022 – Present" }
     ],
     bullets: [
       "Designed and built zero-touch provisioning software across Cisco, Juniper, F5 and Palo Alto datacenter infrastructure: inventory scanning, configuration, backups, failovers and reboots for the national 5G network fabric.",
