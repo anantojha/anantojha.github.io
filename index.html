@@ -12,7 +12,9 @@
 <meta property="og:description" content="Zero-touch infrastructure automation and AI-assisted operations at carrier scale.">
 <meta property="og:url" content="https://anantojha.github.io/">
 <meta property="og:image" content="https://anantojha.github.io/assets/og-image.png">
+<meta property="og:image:alt" content="Anant Ojha, backend and platform engineer: 25,000+ automated changes a year at 96% success">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0B6E7F">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
@@ -29,6 +31,7 @@
       <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#work">Work</a></li>
+      <li><a href="#play">Play</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -38,12 +41,12 @@
 
 <main id="main">
   <section id="top" class="hero">
+    <div class="intro">
+      <img class="avatar" src="assets/images.jpeg" width="96" height="96" alt="Profile picture of Anant Ojha">
+      <p class="who"><strong>Anant Ojha</strong><span>Cloud Automation Software Developer at Bell · Toronto, Canada</span></p>
+    </div>
     <h1>Backend and platform engineer building zero-touch infrastructure for Canada’s 5G network.</h1>
-    <dl class="proof">
-      <div><dt>changes a year, automated</dt><dd>25,000+</dd></div>
-      <div><dt>change success rate</dt><dd>96%</dd></div>
-      <div><dt>faster firewall provisioning</dt><dd>90%+</dd></div>
-    </dl>
+    <p class="lead">I write the software that keeps a national network running without anyone touching it. Most days that means Python services, Terraform and a lot of tests for the moment something breaks.</p>
     <p class="actions">
       <a class="btn primary" href="assets/Anant_Ojha_Resume.pdf">Download resume</a>
       <a class="btn" href="#contact">Contact</a>
@@ -54,19 +57,31 @@
 
   <section id="about">
     <h2>About</h2>
-    <p>I’m a Cloud Automation Software Developer at Bell, where I write the software that provisions, configures and recovers the datacenter and cloud infrastructure behind Canada’s 5G network. I own automation that runs 25,000+ production changes a year, and I like systems that keep working when something fails.</p>
-    <p>My work covers Python and FastAPI services, gRPC, Terraform modules, CI/CD, and test suites for failure-recovery paths. I also mentor developers and support SRE on-call. I’m looking for backend, platform or infrastructure software roles where reliability and automation are the product.</p>
+    <p>I’ve been at Bell since 2022, working on the automation behind the datacenter and cloud infrastructure that carries Canada’s 5G network. I started as a Developer I building Terraform modules for firewalls on AWS and GCP, and moved up to Developer II, where I own automation that runs 25,000+ production changes a year at a 96% success rate.</p>
+    <p>What I care about most is software that keeps working when something fails. That is why I spend so much time on failure-recovery paths, self-healing behaviour, test suites and boring, repeatable deployments. I’ve also been exploring AI-assisted operations: Gemini on Vertex AI and MCP servers that hand on-call engineers the telemetry they need in the first minutes of an incident.</p>
+    <p>I enjoy teaching what I know. I mentor newer developers, run training workshops for engineering teams, support SRE on-call, and was a teaching assistant for software engineering at Carleton. I’m looking for backend, platform or infrastructure software roles where reliability and automation are the product. If that sounds like your team, <a href="#contact">get in touch</a>.</p>
   </section>
 
   <section id="experience">
     <h2>Experience</h2>
     <ol class="timeline" id="timeline"></ol>
-    <p class="note">Education: B.CompSc, Software Engineering, Carleton University (2017–2022), Dean’s Honor List 2021 and 2022. Teaching Assistant for COMP 3004, Winter 2022.</p>
+    <p class="note">Education: B.CompSc, Software Engineering, Carleton University (2017–2022). Dean’s Honor List 2021 and 2022; President’s Scholarship; John M. Beck Scholarship (Aecon Group).</p>
   </section>
 
   <section id="work">
     <h2>Selected work</h2>
     <div class="cards" id="cards"></div>
+  </section>
+
+  <section id="play">
+    <h2>Play: Blobs</h2>
+    <p>A side project I like to show off: an Agar.io-style game. Eat food and smaller blobs to grow, and avoid anything bigger than you.</p>
+    <iframe class="game-frame" src="https://anantojha.github.io/agar-io-clone/" title="Blobs, an Agar.io-style game" loading="lazy" allow="fullscreen"></iframe>
+    <p class="game-bar">
+      <a class="btn primary" href="https://anantojha.github.io/agar-io-clone/" target="_blank" rel="noopener">Open full screen</a>
+      <a class="link" href="https://github.com/anantojha/agar-io-clone" rel="me">Source on GitHub</a>
+    </p>
+    <p class="note">Mouse or touch to steer. Space splits, W ejects mass, and green viruses burst big blobs.</p>
   </section>
 
   <section id="skills">

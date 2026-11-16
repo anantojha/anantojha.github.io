@@ -19,6 +19,14 @@ const experience = [
     ]
   },
   {
+    org: "Carleton University, Ottawa",
+    roles: [{ title: "Teaching Assistant (contract)", when: "Jan 2022 – Apr 2022" }],
+    bullets: [
+      "Ran tutorials and office hours for COMP 3004, Software Engineering, alongside two professors for a full semester.",
+      "Wrote test suites to grade assignments for correctness and edge cases, giving the TA group a consistent standard."
+    ]
+  },
+  {
     org: "Finastra, Toronto",
     roles: [{ title: "Software Engineer Intern", when: "Sep 2020 – Aug 2021" }],
     bullets: [
