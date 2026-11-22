@@ -57,7 +57,7 @@
 
   <section id="about">
     <h2>About</h2>
-    <p>I’ve been at Bell since 2022, working on the automation behind the datacenter and cloud infrastructure that carries Canada’s 5G network. I started as a Developer I building Terraform modules for firewalls on AWS and GCP, and moved up to Developer II, where build zero-touch provisioning software for the physical routers, firewalls and load balancers (Cisco, Juniper, F5 and Palo Alto) inside Bell's global Datacenters nationwide.</p>
+    <p>I’ve been at Bell since 2022 and now work as a Cloud Automation Software Developer II, where my focus is the on-premises datacenter side of Canada’s 5G network. I build zero-touch provisioning software for the routers, firewalls and load balancers that run it (Cisco, Juniper, F5 and Palo Alto), covering inventory scanning, configuration, backups, failovers, reboots and OS upgrades. I own the automation behind 25,000+ production changes a year at a 96% success rate, and I got here from earlier cloud work building Terraform modules for firewalls on AWS and GCP.</p>
     <p>What I care about most is software that keeps working when something fails. That is why I spend so much time on failure-recovery paths, self-healing behaviour, test suites and boring, repeatable deployments. I’ve also been exploring AI-assisted operations: Gemini on Vertex AI and MCP servers that hand on-call engineers the telemetry they need in the first minutes of an incident.</p>
     <p>I enjoy teaching what I know. I mentor newer developers, run training workshops for engineering teams, support SRE on-call, and was a teaching assistant for software engineering at Carleton. I’m looking for backend, platform or infrastructure software roles where reliability and automation are the product. If that sounds like your team, <a href="#contact">get in touch</a>.</p>
   </section>
@@ -74,14 +74,27 @@
   </section>
 
   <section id="play">
-    <h2>Retro PC games I've rebuilt, and play from time to time.</h2>
-    <p>Blobs: an Agar.io-style game. Eat food and smaller blobs to grow, and avoid anything bigger than you.</p>
-    <iframe class="game-frame" src="https://anantojha.github.io/agar-io-clone/" title="Blobs, an Agar.io-style game" loading="lazy" allow="fullscreen"></iframe>
+    <h2>Play</h2>
+    <p>Two browser games I built. Pick one and play it right here.</p>
+    <div class="tabs" role="group" aria-label="Choose a game">
+      <button type="button" class="btn game-tab" aria-pressed="true"
+        data-src="https://anantojha.github.io/agar-io-clone/" data-repo="https://github.com/anantojha/agar-io-clone"
+        data-title="Blobs, an Agar.io-style game"
+        data-desc="Blobs is an Agar.io-style game. Eat food and smaller blobs to grow, and avoid anything bigger than you."
+        data-note="Mouse or touch to steer. Space splits, W ejects mass, and green viruses burst big blobs.">Blobs</button>
+      <button type="button" class="btn game-tab" aria-pressed="false"
+        data-src="https://anantojha.github.io/bowman-2-clone/" data-repo="https://github.com/anantojha/bowman-2-clone"
+        data-title="Bowman 2, an archery duel game"
+        data-desc="Bowman 2 is a turn-based archery duel. Read the wind, aim at the head for the most damage, and outshoot your rival."
+        data-note="Drag back like a slingshot and release to shoot. Choose “Play the bot” for a solo match.">Bowman 2</button>
+    </div>
+    <p id="game-desc">Blobs is an Agar.io-style game. Eat food and smaller blobs to grow, and avoid anything bigger than you.</p>
+    <iframe id="game-frame" class="game-frame" src="https://anantojha.github.io/agar-io-clone/" title="Blobs, an Agar.io-style game" loading="lazy" allow="fullscreen"></iframe>
     <p class="game-bar">
-      <a class="btn primary" href="https://anantojha.github.io/agar-io-clone/" target="_blank" rel="noopener">Open full screen</a>
-      <a class="link" href="https://github.com/anantojha/agar-io-clone" rel="me">Source on GitHub</a>
+      <a id="game-full" class="btn primary" href="https://anantojha.github.io/agar-io-clone/" target="_blank" rel="noopener">Open full screen</a>
+      <a id="game-repo" class="link" href="https://github.com/anantojha/agar-io-clone" rel="me">Source on GitHub</a>
     </p>
-    <p class="note">Mouse or touch to steer. Space splits, W ejects mass, and green viruses burst big blobs.</p>
+    <p id="game-note" class="note">Mouse or touch to steer. Space splits, W ejects mass, and green viruses burst big blobs.</p>
   </section>
 
   <section id="skills">
