@@ -27,3 +27,20 @@ if ("IntersectionObserver" in window) {
   }, { rootMargin: "-40% 0px -55% 0px" });
   sections.forEach(s => io.observe(s));
 }
+
+
+// Game picker in the Play section
+(() => {
+  const tabs = document.querySelectorAll(".game-tab");
+  const frame = document.getElementById("game-frame");
+  if (!tabs.length || !frame) return;
+  tabs.forEach(t => t.addEventListener("click", () => {
+    tabs.forEach(o => o.setAttribute("aria-pressed", String(o === t)));
+    frame.src = t.dataset.src;
+    frame.title = t.dataset.title;
+    document.getElementById("game-desc").textContent = t.dataset.desc;
+    document.getElementById("game-note").textContent = t.dataset.note;
+    document.getElementById("game-full").href = t.dataset.src;
+    document.getElementById("game-repo").href = t.dataset.repo;
+  }));
+})();
